@@ -1,0 +1,44 @@
+/* extend aside search input and search button
+
+add bottom border to search button
+
+add border and extend previous city searches */
+#search-bar{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 12px;
+}
+#search-button{
+    background-color: rgb(48, 162, 255);
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    color: white;
+}
+.previous-searches{
+    border-top: 2px solid rgb(209, 209, 209);
+    padding-top: 12px;
+}
+.previous-search{
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    padding: 8px;
+    margin-top: 12px;
+}
+.city-card{
+    border: 2px solid black;
+    padding: 12px;
+}
+.five-day-card{
+    color: white;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 12px;
+    background-color: rgb(36, 36, 114);
+}
+.five-day{
+    width: 100%;
+}
