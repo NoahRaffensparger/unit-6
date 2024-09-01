@@ -3,7 +3,7 @@ let fiveDay = document.createElement("div")
 let five = document.createElement("h3")
 
 async function getCoord(city) {
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=5292a74c7ba68dc74baa11767b0900c6`
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=5292a74c7ba68dc74baa11767b0900c6`
     try {
         const response = await fetch(url)
         if (!response.ok) {
@@ -18,7 +18,7 @@ async function getCoord(city) {
 }
 
 async function callWeatherAPI(coords) {
-    const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${coords[0]}&lon=${coords[1]}&appid=5292a74c7ba68dc74baa11767b0900c6`
+    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${coords[0]}&lon=${coords[1]}&appid=5292a74c7ba68dc74baa11767b0900c6`
     try {
         const response = await fetch(url)
         if (!response.ok) {
